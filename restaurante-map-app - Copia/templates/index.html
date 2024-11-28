@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de Restaurantes</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <h1>Restaurantes em Brasília</h1>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    <div id="restaurant-list">
+        <ul id="restaurant-items"></ul>
+    </div>
+    <div id="map"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
